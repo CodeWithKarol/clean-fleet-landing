@@ -29,141 +29,270 @@
 	</head>
 	<body>
 		<!-- Navigation -->
-		<nav class="navbar">
-			<div class="nav-container">
-				<div class="nav-logo">
-					<i class="fas fa-leaf"></i>
-					<span>CleanFleet Solutions</span>
-				</div>
-				<div
-					class="nav-menu"
-					id="nav-menu"
-				>
-					<a
-						href="#solutions"
-						class="nav-link"
-						>Solutions</a
+		<nav
+			class="navbar"
+			id="navbar"
+		>
+			<div class="nav-wrapper">
+				<div class="nav-container">
+					<!-- Logo with gradient text -->
+					<div class="nav-logo">
+						<div class="logo-icon">
+							<i class="fas fa-leaf"></i>
+						</div>
+						<span class="logo-text"
+							>CleanFleet</span
+						>
+					</div>
+
+					<!-- Navigation Menu -->
+					<div
+						class="nav-menu"
+						id="nav-menu"
 					>
-					<a
-						href="#how-it-works"
-						class="nav-link"
-						>How It Works</a
+						<a
+							href="#solutions"
+							class="nav-link"
+						>
+							<span>Solutions</span>
+						</a>
+						<a
+							href="#how-it-works"
+							class="nav-link"
+						>
+							<span>How It Works</span>
+						</a>
+						<a
+							href="#case-studies"
+							class="nav-link"
+						>
+							<span>Case Studies</span>
+						</a>
+						<a
+							href="#contact"
+							class="nav-link"
+						>
+							<span>Contact</span>
+						</a>
+
+						<!-- CTA Button in Menu -->
+						<a
+							href="#demo"
+							class="nav-cta"
+						>
+							<i
+								class="fas fa-calendar-check"
+							></i>
+							<span>Schedule Demo</span>
+						</a>
+					</div>
+
+					<!-- Mobile Menu Toggle -->
+					<div
+						class="nav-toggle"
+						id="nav-toggle"
 					>
-					<a
-						href="#case-studies"
-						class="nav-link"
-						>Case Studies</a
-					>
-					<a
-						href="#contact"
-						class="nav-link"
-						>Contact</a
-					>
-					<a
-						href="#demo"
-						class="nav-cta"
-						>Schedule Demo</a
-					>
-				</div>
-				<div
-					class="nav-toggle"
-					id="nav-toggle"
-				>
-					<span class="bar"></span>
-					<span class="bar"></span>
-					<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
 				</div>
 			</div>
+
+			<!-- Scroll indicator line -->
+			<div class="nav-indicator"></div>
 		</nav>
 
 		<!-- Hero Section -->
 		<section class="hero">
+			<!-- Animated background elements -->
+			<div class="hero-bg">
+				<div class="hero-blob hero-blob-1"></div>
+				<div class="hero-blob hero-blob-2"></div>
+				<div class="hero-blob hero-blob-3"></div>
+			</div>
+
 			<div class="hero-content">
 				<div class="hero-text">
+					<!-- Trust Badge -->
+					<div class="hero-badge">
+						<i class="fas fa-check-circle"></i>
+						<span
+							>Trusted by 500+ Fleet
+							Operators</span
+						>
+					</div>
+
 					<h1 class="hero-headline">
-						Transform Your Fleet with Sustainable
-						Electric Solutions
+						The Future of Fleet Management
+						<span class="highlight"
+							>Starts Here</span
+						>
 					</h1>
 					<p class="hero-subheadline">
-						CleanFleet Solutions offers leasing,
-						charging, and real-time management—all
-						in one platform.
+						Experience the next generation of
+						electric fleet solutions. Seamless
+						integration, real-time insights, and
+						transformative savings in one powerful
+						platform.
 					</p>
+
 					<div class="hero-ctas">
 						<a
 							href="#assessment"
 							class="cta-primary"
-							>Get a Free Fleet Assessment</a
 						>
+							<span
+								>Start Your Fleet
+								Transformation</span
+							>
+							<i class="fas fa-arrow-right"></i>
+						</a>
 						<a
 							href="#demo"
 							class="cta-secondary"
-							>Schedule a Demo</a
 						>
+							<i class="fas fa-play"></i>
+							<span>View Demo</span>
+						</a>
 					</div>
-					<div class="hero-stats">
-						<div class="stat">
-							<span class="stat-number">40%</span>
-							<span class="stat-label"
-								>Average Cost Savings</span
-							>
+
+					<!-- Quick Stats Row -->
+					<div class="hero-quick-stats">
+						<div class="quick-stat">
+							<div class="stat-icon">
+								<i class="fas fa-chart-line"></i>
+							</div>
+							<div>
+								<div class="stat-value">40%</div>
+								<div class="stat-text">
+									Cost Savings
+								</div>
+							</div>
 						</div>
-						<div class="stat">
-							<span class="stat-number">85%</span>
-							<span class="stat-label"
-								>Emission Reduction</span
-							>
+						<div class="quick-stat">
+							<div class="stat-icon">
+								<i class="fas fa-leaf"></i>
+							</div>
+							<div>
+								<div class="stat-value">85%</div>
+								<div class="stat-text">
+									Emission Cut
+								</div>
+							</div>
 						</div>
-						<div class="stat">
-							<span class="stat-number"
-								>24/7</span
-							>
-							<span class="stat-label"
-								>Fleet Monitoring</span
-							>
+						<div class="quick-stat">
+							<div class="stat-icon">
+								<i class="fas fa-shield-alt"></i>
+							</div>
+							<div>
+								<div class="stat-value">24/7</div>
+								<div class="stat-text">
+									Monitoring
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
+
+				<!-- Hero Visual - Premium Card -->
 				<div class="hero-visual">
-					<div class="hero-video-placeholder">
-						<i class="fas fa-play-circle"></i>
-						<span>Watch EVs in Action</span>
+					<div class="hero-card premium-card">
+						<div class="card-header">
+							<div class="card-indicator">
+								<span class="pulse-dot"></span>
+								Live Dashboard
+							</div>
+							<i class="fas fa-maximize-2"></i>
+						</div>
+
+						<!-- Dashboard Content -->
+						<div class="card-content">
+							<div class="dashboard-grid">
+								<div class="dashboard-item">
+									<div class="item-icon fleet">
+										<i class="fas fa-car"></i>
+									</div>
+									<div class="item-text">
+										<span class="item-number"
+											>127</span
+										>
+										<span class="item-label"
+											>Active Fleet</span
+										>
+									</div>
+								</div>
+								<div class="dashboard-item">
+									<div class="item-icon battery">
+										<i
+											class="fas fa-battery-full"
+										></i>
+									</div>
+									<div class="item-text">
+										<span class="item-number"
+											>94%</span
+										>
+										<span class="item-label"
+											>Avg. Health</span
+										>
+									</div>
+								</div>
+								<div class="dashboard-item">
+									<div class="item-icon savings">
+										<i
+											class="fas fa-dollar-sign"
+										></i>
+									</div>
+									<div class="item-text">
+										<span class="item-number"
+											>$12.5K</span
+										>
+										<span class="item-label"
+											>Monthly Savings</span
+										>
+									</div>
+								</div>
+								<div class="dashboard-item">
+									<div
+										class="item-icon efficiency"
+									>
+										<i
+											class="fas fa-tachometer-alt"
+										></i>
+									</div>
+									<div class="item-text">
+										<span class="item-number"
+											>98%</span
+										>
+										<span class="item-label"
+											>Uptime</span
+										>
+									</div>
+								</div>
+							</div>
+
+							<!-- Chart Preview -->
+							<div class="chart-preview">
+								<div class="chart-bar"></div>
+								<div class="chart-bar"></div>
+								<div class="chart-bar"></div>
+								<div class="chart-bar"></div>
+								<div class="chart-bar"></div>
+							</div>
+						</div>
+
+						<div class="card-footer">
+							<span class="footer-text"
+								>Real-time fleet management at
+								your fingertips</span
+							>
+						</div>
 					</div>
-					<div class="dashboard-preview">
-						<div class="dashboard-header">
-							<div class="dashboard-title">
-								Fleet Dashboard
-							</div>
-							<div class="dashboard-status">
-								Live
-							</div>
-						</div>
-						<div class="dashboard-metrics">
-							<div class="metric">
-								<span class="metric-value"
-									>127</span
-								>
-								<span class="metric-label"
-									>Active Vehicles</span
-								>
-							</div>
-							<div class="metric">
-								<span class="metric-value"
-									>94%</span
-								>
-								<span class="metric-label"
-									>Battery Health</span
-								>
-							</div>
-							<div class="metric">
-								<span class="metric-value"
-									>$12.5K</span
-								>
-								<span class="metric-label"
-									>Monthly Savings</span
-								>
-							</div>
-						</div>
+
+					<!-- Floating Element -->
+					<div class="floating-element">
+						<i class="fas fa-bolt"></i>
+						<span>Smart Routing</span>
 					</div>
 				</div>
 			</div>
@@ -175,73 +304,212 @@
 			class="solutions"
 		>
 			<div class="container">
+				<!-- Section Header -->
 				<div class="section-header">
-					<h2>
-						Comprehensive Electric Fleet Solutions
-					</h2>
+					<div class="header-badge">
+						<i class="fas fa-bolt"></i>
+						<span>Our Solutions</span>
+					</div>
+					<h2>Comprehensive Fleet Solutions</h2>
 					<p>
 						Everything you need for a successful
 						EV transition, integrated into one
 						powerful platform
 					</p>
 				</div>
+
+				<!-- Solutions Grid -->
 				<div class="solutions-grid">
+					<!-- Solution 1: EV Leasing -->
 					<div class="solution-card">
-						<div class="solution-icon">
-							<i class="fas fa-car-battery"></i>
+						<!-- Card Header with Icon -->
+						<div class="card-header">
+							<div class="icon-wrapper">
+								<i class="fas fa-car-battery"></i>
+							</div>
+							<div class="card-badge">
+								Leasing
+							</div>
 						</div>
+
+						<!-- Card Content -->
 						<h3>EV Leasing</h3>
 						<p>
 							Flexible leasing options for
-							electric vehicles with maintenance
-							packages and insurance included.
+							electric vehicles with comprehensive
+							maintenance and support packages
+							included.
 						</p>
-						<ul>
+
+						<!-- Features List -->
+						<ul class="features-list">
 							<li>
-								Commercial and passenger EVs
+								<span class="feature-icon">
+									<i class="fas fa-check"></i>
+								</span>
+								<span
+									>Commercial & passenger
+									EVs</span
+								>
 							</li>
-							<li>Flexible lease terms</li>
-							<li>Maintenance included</li>
-							<li>End-to-end support</li>
+							<li>
+								<span class="feature-icon">
+									<i class="fas fa-check"></i>
+								</span>
+								<span>Flexible lease terms</span>
+							</li>
+							<li>
+								<span class="feature-icon">
+									<i class="fas fa-check"></i>
+								</span>
+								<span>Maintenance included</span>
+							</li>
+							<li>
+								<span class="feature-icon">
+									<i class="fas fa-check"></i>
+								</span>
+								<span>End-to-end support</span>
+							</li>
 						</ul>
+
+						<!-- Card Footer with CTA -->
+						<a
+							href="#contact"
+							class="card-link"
+							>Learn More
+							<i class="fas fa-arrow-right"></i
+						></a>
 					</div>
-					<div class="solution-card">
-						<div class="solution-icon">
-							<i
-								class="fas fa-charging-station"
-							></i>
+
+					<!-- Solution 2: Charging Infrastructure -->
+					<div class="solution-card featured">
+						<!-- Card Header with Icon -->
+						<div class="card-header">
+							<div class="icon-wrapper">
+								<i
+									class="fas fa-charging-station"
+								></i>
+							</div>
+							<div
+								class="card-badge featured-badge"
+							>
+								Popular
+							</div>
 						</div>
+
+						<!-- Card Content -->
 						<h3>Charging Infrastructure</h3>
 						<p>
 							Complete charging solutions from
 							site assessment to installation and
-							ongoing maintenance.
+							ongoing maintenance support.
 						</p>
-						<ul>
-							<li>Site assessment & planning</li>
+
+						<!-- Features List -->
+						<ul class="features-list">
 							<li>
-								Installation & commissioning
+								<span class="feature-icon">
+									<i class="fas fa-check"></i>
+								</span>
+								<span
+									>Site assessment &
+									planning</span
+								>
 							</li>
-							<li>24/7 monitoring</li>
-							<li>Preventive maintenance</li>
+							<li>
+								<span class="feature-icon">
+									<i class="fas fa-check"></i>
+								</span>
+								<span
+									>Installation &
+									commissioning</span
+								>
+							</li>
+							<li>
+								<span class="feature-icon">
+									<i class="fas fa-check"></i>
+								</span>
+								<span>24/7 monitoring</span>
+							</li>
+							<li>
+								<span class="feature-icon">
+									<i class="fas fa-check"></i>
+								</span>
+								<span
+									>Preventive maintenance</span
+								>
+							</li>
 						</ul>
+
+						<!-- Card Footer with CTA -->
+						<a
+							href="#contact"
+							class="card-link"
+							>Learn More
+							<i class="fas fa-arrow-right"></i
+						></a>
 					</div>
+
+					<!-- Solution 3: Fleet Management -->
 					<div class="solution-card">
-						<div class="solution-icon">
-							<i class="fas fa-chart-line"></i>
+						<!-- Card Header with Icon -->
+						<div class="card-header">
+							<div class="icon-wrapper">
+								<i class="fas fa-chart-line"></i>
+							</div>
+							<div class="card-badge">
+								Management
+							</div>
 						</div>
+
+						<!-- Card Content -->
 						<h3>Fleet Management</h3>
 						<p>
 							Real-time monitoring and analytics
 							to optimize your fleet's performance
-							and efficiency.
+							and maximize efficiency.
 						</p>
-						<ul>
-							<li>Real-time vehicle tracking</li>
-							<li>Battery health monitoring</li>
-							<li>Cost optimization</li>
-							<li>Predictive analytics</li>
+
+						<!-- Features List -->
+						<ul class="features-list">
+							<li>
+								<span class="feature-icon">
+									<i class="fas fa-check"></i>
+								</span>
+								<span
+									>Real-time vehicle
+									tracking</span
+								>
+							</li>
+							<li>
+								<span class="feature-icon">
+									<i class="fas fa-check"></i>
+								</span>
+								<span
+									>Battery health monitoring</span
+								>
+							</li>
+							<li>
+								<span class="feature-icon">
+									<i class="fas fa-check"></i>
+								</span>
+								<span>Cost optimization</span>
+							</li>
+							<li>
+								<span class="feature-icon">
+									<i class="fas fa-check"></i>
+								</span>
+								<span>Predictive analytics</span>
+							</li>
 						</ul>
+
+						<!-- Card Footer with CTA -->
+						<a
+							href="#contact"
+							class="card-link"
+							>Learn More
+							<i class="fas fa-arrow-right"></i
+						></a>
 					</div>
 				</div>
 			</div>
@@ -254,6 +522,10 @@
 		>
 			<div class="container">
 				<div class="section-header">
+					<div class="header-badge">
+						<i class="fas fa-cog"></i
+						><span>Our Process</span>
+					</div>
 					<h2>How It Works</h2>
 					<p>
 						Simple, streamlined process to
@@ -261,9 +533,13 @@
 					</p>
 				</div>
 				<div class="process-steps">
-					<div class="step">
-						<div class="step-number">1</div>
-						<div class="step-content">
+					<div class="step-item">
+						<div class="step-card">
+							<div class="step-number">
+								<i
+									class="fas fa-clipboard-check"
+								></i>
+							</div>
 							<h3>Fleet Assessment</h3>
 							<p>
 								We analyze your current fleet,
@@ -271,39 +547,139 @@
 								requirements to create a
 								customized electrification plan.
 							</p>
+							<ul class="step-features">
+								<li>
+									<span class="check-icon"
+										><i
+											class="fas fa-check"
+										></i></span
+									>Route analysis
+								</li>
+								<li>
+									<span class="check-icon"
+										><i
+											class="fas fa-check"
+										></i></span
+									>Cost evaluation
+								</li>
+								<li>
+									<span class="check-icon"
+										><i
+											class="fas fa-check"
+										></i></span
+									>Custom roadmap
+								</li>
+							</ul>
 						</div>
 					</div>
-					<div class="step">
-						<div class="step-number">2</div>
-						<div class="step-content">
+					<div class="step-item">
+						<div class="step-card">
+							<div class="step-number">
+								<i
+									class="fas fa-charging-station"
+								></i>
+							</div>
 							<h3>Infrastructure Planning</h3>
 							<p>
 								Design and install charging
 								infrastructure optimized for your
 								locations and usage patterns.
 							</p>
+							<ul class="step-features">
+								<li>
+									<span class="check-icon"
+										><i
+											class="fas fa-check"
+										></i></span
+									>Site assessment
+								</li>
+								<li>
+									<span class="check-icon"
+										><i
+											class="fas fa-check"
+										></i></span
+									>Charger installation
+								</li>
+								<li>
+									<span class="check-icon"
+										><i
+											class="fas fa-check"
+										></i></span
+									>Grid integration
+								</li>
+							</ul>
 						</div>
 					</div>
-					<div class="step">
-						<div class="step-number">3</div>
-						<div class="step-content">
+					<div class="step-item">
+						<div class="step-card">
+							<div class="step-number">
+								<i class="fas fa-shuttle-van"></i>
+							</div>
 							<h3>Vehicle Deployment</h3>
 							<p>
 								Seamless transition with vehicle
 								delivery, driver training, and
 								system integration.
 							</p>
+							<ul class="step-features">
+								<li>
+									<span class="check-icon"
+										><i
+											class="fas fa-check"
+										></i></span
+									>Vehicle delivery
+								</li>
+								<li>
+									<span class="check-icon"
+										><i
+											class="fas fa-check"
+										></i></span
+									>Driver training
+								</li>
+								<li>
+									<span class="check-icon"
+										><i
+											class="fas fa-check"
+										></i></span
+									>System setup
+								</li>
+							</ul>
 						</div>
 					</div>
-					<div class="step">
-						<div class="step-number">4</div>
-						<div class="step-content">
+					<div class="step-item">
+						<div class="step-card">
+							<div class="step-number">
+								<i class="fas fa-chart-line"></i>
+							</div>
 							<h3>Ongoing Management</h3>
 							<p>
 								Continuous monitoring,
 								optimization, and support to
 								maximize your fleet's performance.
 							</p>
+							<ul class="step-features">
+								<li>
+									<span class="check-icon"
+										><i
+											class="fas fa-check"
+										></i></span
+									>24/7 monitoring
+								</li>
+								<li>
+									<span class="check-icon"
+										><i
+											class="fas fa-check"
+										></i></span
+									>Performance reports
+								</li>
+								<li>
+									<span class="check-icon"
+										><i
+											class="fas fa-check"
+										></i></span
+									>Dedicated support
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -315,6 +691,10 @@
 			<div class="container">
 				<div class="calculator-wrapper">
 					<div class="calculator-header">
+						<div class="header-badge">
+							<i class="fas fa-calculator"></i
+							><span>Savings Calculator</span>
+						</div>
 						<h2>
 							Calculate Your Fleet Electrification
 							Savings
@@ -330,56 +710,83 @@
 								<label for="fleet-size"
 									>Fleet Size</label
 								>
-								<input
-									type="number"
-									id="fleet-size"
-									placeholder="Enter number of vehicles"
-									min="1"
-									max="1000"
-								/>
+								<div class="input-wrapper">
+									<input
+										type="number"
+										id="fleet-size"
+										placeholder="Enter number of vehicles"
+										min="1"
+										max="1000"
+									/>
+									<span class="input-icon"
+										><i class="fas fa-car"></i
+									></span>
+								</div>
 							</div>
 							<div class="input-group">
 								<label for="miles-per-month"
 									>Miles per Month (per
 									vehicle)</label
 								>
-								<input
-									type="number"
-									id="miles-per-month"
-									placeholder="Enter monthly miles"
-									min="100"
-									max="10000"
-								/>
+								<div class="input-wrapper">
+									<input
+										type="number"
+										id="miles-per-month"
+										placeholder="Enter monthly miles"
+										min="100"
+										max="10000"
+									/>
+									<span class="input-icon"
+										><i class="fas fa-road"></i
+									></span>
+								</div>
 							</div>
 							<div class="input-group">
 								<label for="fuel-cost"
 									>Current Fuel Cost per
 									Gallon</label
 								>
-								<input
-									type="number"
-									id="fuel-cost"
-									placeholder="Enter fuel cost"
-									step="0.01"
-									min="1"
-									max="10"
-								/>
+								<div class="input-wrapper">
+									<input
+										type="number"
+										id="fuel-cost"
+										placeholder="Enter fuel cost"
+										step="0.01"
+										min="1"
+										max="10"
+									/>
+									<span class="input-icon"
+										>$</span
+									>
+								</div>
 							</div>
 							<div class="input-group">
 								<label for="vehicle-mpg"
 									>Average Vehicle MPG</label
 								>
-								<input
-									type="number"
-									id="vehicle-mpg"
-									placeholder="Enter MPG"
-									min="5"
-									max="50"
-								/>
+								<div class="input-wrapper">
+									<input
+										type="number"
+										id="vehicle-mpg"
+										placeholder="Enter MPG"
+										min="5"
+										max="50"
+									/>
+									<span class="input-icon"
+										><i
+											class="fas fa-tachometer-alt"
+										></i
+									></span>
+								</div>
 							</div>
 						</div>
 						<div class="calculator-results">
 							<div class="result-card">
+								<div class="result-icon">
+									<i
+										class="fas fa-calendar-month"
+									></i>
+								</div>
 								<h3>Monthly Savings</h3>
 								<div
 									class="result-value"
@@ -389,6 +796,11 @@
 								</div>
 							</div>
 							<div class="result-card">
+								<div class="result-icon">
+									<i
+										class="fas fa-chart-line"
+									></i>
+								</div>
 								<h3>Annual Savings</h3>
 								<div
 									class="result-value"
@@ -398,6 +810,9 @@
 								</div>
 							</div>
 							<div class="result-card">
+								<div class="result-icon">
+									<i class="fas fa-leaf"></i>
+								</div>
 								<h3>CO2 Reduction</h3>
 								<div
 									class="result-value"
@@ -419,20 +834,25 @@
 		>
 			<div class="container">
 				<div class="section-header">
-					<h2>Success Stories</h2>
+					<div class="header-badge">
+						<i class="fas fa-star"></i
+						><span>Success Stories</span>
+					</div>
+					<h2>See Our Impact</h2>
 					<p>
-						See how leading companies have
-						transformed their fleets with
-						CleanFleet Solutions
+						Leading companies have transformed
+						their fleets with CleanFleet Solutions
 					</p>
 				</div>
 				<div class="case-studies-grid">
 					<div class="case-study">
-						<div class="case-study-image">
-							<i class="fas fa-truck"></i>
+						<div class="case-study-header">
+							<div class="case-study-icon">
+								<i class="fas fa-truck"></i>
+							</div>
+							<h3>Metro Logistics</h3>
 						</div>
 						<div class="case-study-content">
-							<h3>Metro Logistics</h3>
 							<p class="case-study-description">
 								Reduced operational costs by 45%
 								while eliminating 90% of fleet
@@ -462,18 +882,20 @@
 								transition seamless. The ROI
 								exceeded our expectations."
 								<cite
-									>- Sarah Johnson, Fleet
+									>Sarah Johnson, Fleet
 									Manager</cite
 								>
 							</blockquote>
 						</div>
 					</div>
 					<div class="case-study">
-						<div class="case-study-image">
-							<i class="fas fa-bus"></i>
+						<div class="case-study-header">
+							<div class="case-study-icon">
+								<i class="fas fa-bus"></i>
+							</div>
+							<h3>City Transit Authority</h3>
 						</div>
 						<div class="case-study-content">
-							<h3>City Transit Authority</h3>
 							<p class="case-study-description">
 								Electrified 150 buses with
 								comprehensive charging
@@ -503,18 +925,22 @@
 								optimize routes and reduce energy
 								consumption daily."
 								<cite
-									>- Michael Chen, Operations
+									>Michael Chen, Operations
 									Director</cite
 								>
 							</blockquote>
 						</div>
 					</div>
 					<div class="case-study">
-						<div class="case-study-image">
-							<i class="fas fa-shipping-fast"></i>
+						<div class="case-study-header">
+							<div class="case-study-icon">
+								<i
+									class="fas fa-shipping-fast"
+								></i>
+							</div>
+							<h3>Express Delivery Co</h3>
 						</div>
 						<div class="case-study-content">
-							<h3>Express Delivery Co</h3>
 							<p class="case-study-description">
 								Achieved carbon neutrality while
 								improving delivery efficiency with
@@ -543,7 +969,7 @@
 								"Our customers love our green
 								delivery promise, and our bottom
 								line loves the savings."
-								<cite>- Lisa Rodriguez, CEO</cite>
+								<cite>Lisa Rodriguez, CEO</cite>
 							</blockquote>
 						</div>
 					</div>
@@ -559,6 +985,10 @@
 			<div class="container">
 				<div class="form-wrapper">
 					<div class="form-header">
+						<div class="header-badge">
+							<i class="fas fa-file-contract"></i
+							><span>Free Assessment</span>
+						</div>
 						<h2>
 							Get Your Free Fleet Assessment
 						</h2>
@@ -577,23 +1007,37 @@
 								<label for="company-name"
 									>Company Name *</label
 								>
-								<input
-									type="text"
-									id="company-name"
-									name="company-name"
-									required
-								/>
+								<div class="input-wrapper">
+									<input
+										type="text"
+										id="company-name"
+										name="company-name"
+										placeholder="Enter company name"
+										required
+									/>
+									<span class="input-icon"
+										><i
+											class="fas fa-building"
+										></i
+									></span>
+								</div>
 							</div>
 							<div class="form-group">
 								<label for="contact-name"
 									>Your Name *</label
 								>
-								<input
-									type="text"
-									id="contact-name"
-									name="contact-name"
-									required
-								/>
+								<div class="input-wrapper">
+									<input
+										type="text"
+										id="contact-name"
+										name="contact-name"
+										placeholder="Enter your name"
+										required
+									/>
+									<span class="input-icon"
+										><i class="fas fa-user"></i
+									></span>
+								</div>
 							</div>
 						</div>
 						<div class="form-row">
@@ -601,22 +1045,36 @@
 								<label for="email"
 									>Email Address *</label
 								>
-								<input
-									type="email"
-									id="email"
-									name="email"
-									required
-								/>
+								<div class="input-wrapper">
+									<input
+										type="email"
+										id="email"
+										name="email"
+										placeholder="Enter email address"
+										required
+									/>
+									<span class="input-icon"
+										><i
+											class="fas fa-envelope"
+										></i
+									></span>
+								</div>
 							</div>
 							<div class="form-group">
 								<label for="phone"
 									>Phone Number</label
 								>
-								<input
-									type="tel"
-									id="phone"
-									name="phone"
-								/>
+								<div class="input-wrapper">
+									<input
+										type="tel"
+										id="phone"
+										name="phone"
+										placeholder="Enter phone number"
+									/>
+									<span class="input-icon"
+										><i class="fas fa-phone"></i
+									></span>
+								</div>
 							</div>
 						</div>
 						<div class="form-row">
@@ -624,61 +1082,76 @@
 								<label for="fleet-size-form"
 									>Current Fleet Size *</label
 								>
-								<select
-									id="fleet-size-form"
-									name="fleet-size"
-									required
-								>
-									<option value="">
-										Select fleet size
-									</option>
-									<option value="1-10">
-										1-10 vehicles
-									</option>
-									<option value="11-50">
-										11-50 vehicles
-									</option>
-									<option value="51-100">
-										51-100 vehicles
-									</option>
-									<option value="101-500">
-										101-500 vehicles
-									</option>
-									<option value="500+">
-										500+ vehicles
-									</option>
-								</select>
+								<div class="select-wrapper">
+									<select
+										id="fleet-size-form"
+										name="fleet-size"
+										required
+									>
+										<option value="">
+											Select fleet size
+										</option>
+										<option value="1-10">
+											1-10 vehicles
+										</option>
+										<option value="11-50">
+											11-50 vehicles
+										</option>
+										<option value="51-100">
+											51-100 vehicles
+										</option>
+										<option value="101-500">
+											101-500 vehicles
+										</option>
+										<option value="500+">
+											500+ vehicles
+										</option>
+									</select>
+									<span class="select-icon"
+										><i
+											class="fas fa-chevron-down"
+										></i
+									></span>
+								</div>
 							</div>
 							<div class="form-group">
 								<label for="timeline"
 									>Electrification Timeline</label
 								>
-								<select
-									id="timeline"
-									name="timeline"
-								>
-									<option value="">
-										Select timeline
-									</option>
-									<option value="immediate">
-										Within 3 months
-									</option>
-									<option value="short">
-										3-6 months
-									</option>
-									<option value="medium">
-										6-12 months
-									</option>
-									<option value="long">
-										12+ months
-									</option>
-								</select>
+								<div class="select-wrapper">
+									<select
+										id="timeline"
+										name="timeline"
+									>
+										<option value="">
+											Select timeline
+										</option>
+										<option value="immediate">
+											Within 3 months
+										</option>
+										<option value="short">
+											3-6 months
+										</option>
+										<option value="medium">
+											6-12 months
+										</option>
+										<option value="long">
+											12+ months
+										</option>
+									</select>
+									<span class="select-icon"
+										><i
+											class="fas fa-chevron-down"
+										></i
+									></span>
+								</div>
 							</div>
 						</div>
 						<button
 							type="submit"
 							class="form-submit"
 						>
+							<i class="fas fa-arrow-right"></i>
 							Get Free Assessment
 						</button>
 					</form>
@@ -692,21 +1165,52 @@
 			class="demo-section"
 		>
 			<div class="container">
-				<div class="demo-content">
-					<h2>
-						See CleanFleet Solutions in Action
-					</h2>
-					<p>
-						Schedule a personalized demo to
-						explore our platform and discover how
-						we can transform your fleet
-						operations.
-					</p>
-					<a
-						href="#contact"
-						class="cta-primary"
-						>Schedule Your Demo</a
-					>
+				<div class="demo-wrapper">
+					<div class="demo-icon">
+						<i class="fas fa-play"></i>
+					</div>
+					<div class="demo-content">
+						<div class="demo-badge">
+							<i class="fas fa-video"></i
+							><span>Live Demo</span>
+						</div>
+						<h2>
+							See CleanFleet Solutions in Action
+						</h2>
+						<p>
+							Schedule a personalized demo to
+							explore our platform and discover
+							how we can transform your fleet
+							operations.
+						</p>
+						<div class="demo-features">
+							<div class="demo-feature">
+								<i class="fas fa-check"></i>
+								<span
+									>Real-time Fleet Tracking</span
+								>
+							</div>
+							<div class="demo-feature">
+								<i class="fas fa-check"></i>
+								<span>Advanced Analytics</span>
+							</div>
+							<div class="demo-feature">
+								<i class="fas fa-check"></i>
+								<span
+									>Predictive Maintenance</span
+								>
+							</div>
+						</div>
+						<a
+							href="#contact"
+							class="cta-primary"
+						>
+							<i
+								class="fas fa-calendar-check"
+							></i>
+							Schedule Your Demo
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -717,13 +1221,20 @@
 			class="footer"
 		>
 			<div class="container">
-				<div class="footer-content">
-					<div class="footer-section">
+				<div class="footer-top">
+					<div class="footer-section footer-main">
 						<div class="footer-logo">
-							<i class="fas fa-leaf"></i>
-							<span>CleanFleet Solutions</span>
+							<div class="logo-circle">
+								<i class="fas fa-leaf"></i>
+							</div>
+							<div>
+								<span>CleanFleet Solutions</span>
+								<p class="logo-subtitle">
+									Transform Your Fleet
+								</p>
+							</div>
 						</div>
-						<p>
+						<p class="footer-description">
 							Transforming transportation with
 							sustainable electric fleet
 							solutions.
@@ -732,13 +1243,17 @@
 							<a
 								href="#"
 								class="cta-secondary"
-								>Download Our Sustainability
-								Report</a
 							>
+								<i class="fas fa-download"></i>
+								Download Our Sustainability Report
+							</a>
 						</div>
 					</div>
 					<div class="footer-section">
-						<h4>Solutions</h4>
+						<h4>
+							<i class="fas fa-bolt"></i>
+							Solutions
+						</h4>
 						<ul>
 							<li>
 								<a href="#solutions"
@@ -763,7 +1278,9 @@
 						</ul>
 					</div>
 					<div class="footer-section">
-						<h4>Company</h4>
+						<h4>
+							<i class="fas fa-cog"></i> Company
+						</h4>
 						<ul>
 							<li>
 								<a href="#how-it-works"
@@ -782,31 +1299,42 @@
 						</ul>
 					</div>
 					<div class="footer-section">
-						<h4>Contact</h4>
+						<h4>
+							<i class="fas fa-envelope"></i>
+							Contact
+						</h4>
 						<div class="contact-info">
 							<p>
 								<i class="fas fa-envelope"></i>
-								info@cleanfleetsolutions.com
+								<span
+									>info@cleanfleetsolutions.com</span
+								>
 							</p>
 							<p>
 								<i class="fas fa-phone"></i>
-								1-800-CLEAN-EV
+								<span>1-800-CLEAN-EV</span>
 							</p>
 							<p>
 								<i
 									class="fas fa-map-marker-alt"
 								></i>
-								San Francisco, CA
+								<span>San Francisco, CA</span>
 							</p>
 						</div>
 						<div class="social-links">
-							<a href="#"
+							<a
+								href="#"
+								title="LinkedIn"
 								><i class="fab fa-linkedin"></i
 							></a>
-							<a href="#"
+							<a
+								href="#"
+								title="Twitter"
 								><i class="fab fa-twitter"></i
 							></a>
-							<a href="#"
+							<a
+								href="#"
+								title="Facebook"
 								><i class="fab fa-facebook"></i
 							></a>
 						</div>
