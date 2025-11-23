@@ -15,6 +15,15 @@
 			content="CleanFleet Solutions offers comprehensive EV fleet leasing, charging infrastructure, and real-time management solutions. Get your free fleet assessment today."
 		/>
 		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="favicon.svg"
+		/>
+		<link
+			rel="apple-touch-icon"
+			href="favicon.svg"
+		/>
+		<link
 			rel="stylesheet"
 			href="styles.css"
 		/>
@@ -36,15 +45,18 @@
 			<div class="nav-wrapper">
 				<div class="nav-container">
 					<!-- Logo with gradient text -->
-					<div class="nav-logo">
+					<a
+						href="#"
+						class="nav-logo"
+						onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;"
+					>
 						<div class="logo-icon">
 							<i class="fas fa-leaf"></i>
 						</div>
 						<span class="logo-text"
 							>CleanFleet</span
 						>
-					</div>
-
+					</a>
 					<!-- Navigation Menu -->
 					<div
 						class="nav-menu"
@@ -1329,8 +1341,17 @@
 							></a>
 							<a
 								href="#"
-								title="Twitter"
-								><i class="fab fa-twitter"></i
+								title="X"
+								><svg
+									class="x-icon"
+									width="1em"
+									height="1em"
+									viewBox="0 0 24 24"
+									fill="currentColor"
+								>
+									<path
+										d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.207-6.807-5.966 6.807H2.423l7.723-8.835L1.029 2.25h6.826l4.713 6.231 5.906-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+									/></svg
 							></a>
 							<a
 								href="#"
