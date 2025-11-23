@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>
+			CleanFleet Landing Page - Customization
+			Instructions
+		</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: "Inter", -apple-system,
+					BlinkMacSystemFont, "Segoe UI",
+					sans-serif;
+				line-height: 1.6;
+				color: #333;
+				background: linear-gradient(
+					135deg,
+					#f5f7fa 0%,
+					#c3cfe2 100%
+				);
+				min-height: 100vh;
+				padding: 20px;
+			}
+
+			.container {
+				max-width: 1000px;
+				margin: 0 auto;
+				background: white;
+				border-radius: 12px;
+				box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+				overflow: hidden;
+			}
+
+			header {
+				background: linear-gradient(
+					135deg,
+					#4ade80 0%,
+					#22d3ee 100%
+				);
+				color: white;
+				padding: 40px;
+				text-align: center;
+			}
+
+			header h1 {
+				font-size: 2.5rem;
+				margin-bottom: 10px;
+			}
+
+			header p {
+				font-size: 1.1rem;
+				opacity: 0.95;
+			}
+
+			.content {
+				padding: 40px;
+			}
+
+			h2 {
+				color: #0f172a;
+				margin: 30px 0 20px;
+				padding-bottom: 10px;
+				border-bottom: 3px solid #4ade80;
+			}
+
+			h3 {
+				color: #22d3ee;
+				margin: 20px 0 15px;
+				font-size: 1.3rem;
+			}
+
+			.section {
+				margin-bottom: 30px;
+			}
+
+			.code-block {
+				background: #f5f5f5;
+				border-left: 4px solid #4ade80;
+				padding: 15px;
+				margin: 15px 0;
+				border-radius: 4px;
+				overflow-x: auto;
+				font-family: "Courier New", monospace;
+				font-size: 0.9rem;
+				line-height: 1.5;
+			}
+
+			.warning {
+				background: #fff3cd;
+				border-left: 4px solid #ffc107;
+				padding: 15px;
+				margin: 15px 0;
+				border-radius: 4px;
+			}
+
+			.success {
+				background: #d4edda;
+				border-left: 4px solid #28a745;
+				padding: 15px;
+				margin: 15px 0;
+				border-radius: 4px;
+			}
+
+			.info {
+				background: #d1ecf1;
+				border-left: 4px solid #17a2b8;
+				padding: 15px;
+				margin: 15px 0;
+				border-radius: 4px;
+			}
+
+			ul,
+			ol {
+				margin-left: 20px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+
+			li {
+				margin-bottom: 8px;
+			}
+
+			table {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 15px 0;
+			}
+
+			th,
+			td {
+				border: 1px solid #ddd;
+				padding: 12px;
+				text-align: left;
+			}
+
+			th {
+				background: #4ade80;
+				color: white;
+			}
+
+			tr:nth-child(even) {
+				background: #f9f9f9;
+			}
+
+			.file-path {
+				background: #f5f5f5;
+				padding: 5px 10px;
+				border-radius: 4px;
+				font-family: monospace;
+				font-weight: 500;
+			}
+
+			.highlight {
+				background: #fff3cd;
+				padding: 2px 6px;
+				border-radius: 3px;
+			}
+
+			footer {
+				background: #0f172a;
+				color: white;
+				padding: 20px 40px;
+				text-align: center;
+			}
+
+			.toc {
+				background: #f9f9f9;
+				border: 1px solid #ddd;
+				border-radius: 4px;
+				padding: 20px;
+				margin: 20px 0;
+			}
+
+			.toc h3 {
+				margin-top: 0;
+				color: #0f172a;
+				border: none;
+			}
+
+			.toc a {
+				color: #4ade80;
+				text-decoration: none;
+			}
+
+			.toc a:hover {
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>CleanFleet Landing Page</h1>
+				<p>
+					Complete Customization & Modification
+					Guide
+				</p>
+			</header>
+
+			<div class="content">
+				<div class="toc">
+					<h3>📋 Table of Contents</h3>
+					<ul>
+						<li>
+							<a href="#overview"
+								>Project Overview</a
+							>
+						</li>
+						<li>
+							<a href="#solutions"
+								>Modifying Solutions/Products</a
+							>
+						</li>
+						<li>
+							<a href="#hero"
+								>Customizing Hero Section</a
+							>
+						</li>
+						<li>
+							<a href="#howitworks"
+								>Updating How It Works</a
+							>
+						</li>
+						<li>
+							<a href="#roicalculator"
+								>ROI Calculator</a
+							>
+						</li>
+						<li>
+							<a href="#casestudies"
+								>Case Studies</a
+							>
+						</li>
+						<li>
+							<a href="#colors">Color Scheme</a>
+						</li>
+						<li>
+							<a href="#fonts">Typography</a>
+						</li>
+						<li>
+							<a href="#faq"
+								>FAQ & Troubleshooting</a
+							>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Overview -->
+				<div
+					class="section"
+					id="overview"
+				>
+					<h2>📖 Project Overview</h2>
+					<p>
+						This is a premium landing page
+						template for CleanFleet Solutions
+						built with:
+					</p>
+					<ul>
+						<li>
+							<strong>HTML5</strong> - Semantic
+							markup structure
+						</li>
+						<li>
+							<strong>CSS3</strong> - Modern
+							styling with animations and
+							responsive design
+						</li>
+						<li>
+							<strong>Vanilla JavaScript</strong>
+							- Interactive features without
+							dependencies
+						</li>
+						<li>
+							<strong>Font Awesome Icons</strong>
+							- Professional icon library
+						</li>
+					</ul>
+
+					<div class="info">
+						<strong>💡 Tip:</strong> No build
+						process or external frameworks are
+						required. Simply edit the HTML, CSS,
+						and JavaScript files directly!
+					</div>
+				</div>
+
+				<!-- Solutions -->
+				<div
+					class="section"
+					id="solutions"
+				>
+					<h2>🎯 Modifying Solutions/Products</h2>
+
+					<h3>Overview</h3>
+					<p>
+						The Solutions section displays your
+						main product offerings with icons,
+						descriptions, and call-to-action
+						buttons. This section is highly
+						customizable.
+					</p>
+
+					<h3>Location in Code</h3>
+					<p>
+						Navigate to the
+						<span class="file-path"
+							>Solutions Section</span
+						>
+						in
+						<span class="file-path"
+							>index.html</span
+						>
+						(around line 300-450)
+					</p>
+
+					<h3>HTML Structure</h3>
+					<div class="code-block">
+						&lt;section class="solutions"
+						id="solutions"&gt; &lt;div
+						class="container"&gt; &lt;div
+						class="section-header"&gt; &lt;div
+						class="section-badge"&gt; &lt;i
+						class="fas fa-lightbulb"&gt;&lt;/i&gt;
+						&lt;span&gt;Our Solutions&lt;/span&gt;
+						&lt;/div&gt; &lt;h2&gt;Comprehensive
+						Fleet Transformation&lt;/h2&gt;
+						&lt;/div&gt; &lt;div
+						class="solutions-grid"&gt; &lt;!--
+						Solution cards go here --&gt;
+						&lt;/div&gt; &lt;/div&gt;
+						&lt;/section&gt;
+					</div>
+
+					<h3>Adding/Editing Solution Cards</h3>
+
+					<h4>Single Solution Card Structure:</h4>
+					<div class="code-block">
+						&lt;div class="solution-card"&gt;
+						&lt;div class="solution-icon"&gt;
+						&lt;i class="fas
+						fa-icon-name"&gt;&lt;/i&gt;
+						&lt;/div&gt; &lt;h3&gt;Solution
+						Title&lt;/h3&gt; &lt;p&gt;Solution
+						description goes here&lt;/p&gt; &lt;ul
+						class="solution-features"&gt;
+						&lt;li&gt;&lt;i class="fas
+						fa-check"&gt;&lt;/i&gt;Feature
+						1&lt;/li&gt; &lt;li&gt;&lt;i
+						class="fas
+						fa-check"&gt;&lt;/i&gt;Feature
+						2&lt;/li&gt; &lt;li&gt;&lt;i
+						class="fas
+						fa-check"&gt;&lt;/i&gt;Feature
+						3&lt;/li&gt; &lt;/ul&gt; &lt;a
+						href="#contact"
+						class="solution-cta"&gt;Learn More
+						&rarr;&lt;/a&gt; &lt;/div&gt;
+					</div>
+
+					<h3>Step-by-Step Modification</h3>
+					<ol>
+						<li>
+							<strong
+								>Change Solution Title</strong
+							>
+							<div class="code-block">
+								&lt;h3&gt;Your New Solution
+								Name&lt;/h3&gt;
+							</div>
+						</li>
+						<li>
+							<strong>Update Description</strong>
+							<div class="code-block">
+								&lt;p&gt;Replace this with your
+								solution description&lt;/p&gt;
+							</div>
+						</li>
+						<li>
+							<strong
+								>Modify Features List</strong
+							>
+							<div class="code-block">
+								&lt;li&gt;&lt;i class="fas
+								fa-check"&gt;&lt;/i&gt;Your
+								Feature&lt;/li&gt; &lt;li&gt;&lt;i
+								class="fas
+								fa-check"&gt;&lt;/i&gt;Another
+								Feature&lt;/li&gt;
+							</div>
+						</li>
+						<li>
+							<strong>Change Icon</strong>
+							<p>
+								Replace
+								<span class="highlight"
+									>fa-icon-name</span
+								>
+								with any Font Awesome icon:
+							</p>
+							<ul>
+								<li>
+									<span class="highlight"
+										>fa-zap</span
+									>
+									- Lightning bolt
+								</li>
+								<li>
+									<span class="highlight"
+										>fa-plug</span
+									>
+									- Charging plug
+								</li>
+								<li>
+									<span class="highlight"
+										>fa-leaf</span
+									>
+									- Eco/sustainable
+								</li>
+								<li>
+									<span class="highlight"
+										>fa-cog</span
+									>
+									- Settings/management
+								</li>
+								<li>
+									<span class="highlight"
+										>fa-chart-line</span
+									>
+									- Analytics
+								</li>
+							</ul>
+							<p>
+								Find more icons at
+								<a
+									href="https://fontawesome.com/icons"
+									target="_blank"
+									>fontawesome.com</a
+								>
+							</p>
+						</li>
+					</ol>
+
+					<h3>
+						CSS Customization for Solution Cards
+					</h3>
+					<p>
+						Modify the solution card styling in
+						<span class="file-path"
+							>styles.css</span
+						>
+					</p>
+					<div class="code-block">
+						.solution-card { padding: 2rem;
+						background: rgba(74, 222, 128, 0.05);
+						border-radius: 12px; transition: all
+						0.3s ease; /* Customize: background
+						color, padding, border-radius */ }
+						.solution-icon { width: 60px; height:
+						60px; background:
+						linear-gradient(135deg, #4ade80,
+						#22d3ee); /* Customize: size, gradient
+						colors */ }
+					</div>
+
+					<h3>Changing the Number of Columns</h3>
+					<p>
+						To display 2, 4, or 5 columns instead
+						of 3:
+					</p>
+					<div class="code-block">
+						/* Find this in styles.css */
+						.solutions-grid {
+						grid-template-columns: repeat(3, 1fr);
+						/* Change 3 to: 2, 4, or 5 */ }
+					</div>
+
+					<div class="success">
+						<strong>✅ Done!</strong> Your
+						solutions section has been updated.
+						The changes are reflected instantly.
+					</div>
+				</div>
+
+				<!-- Hero Section -->
+				<div
+					class="section"
+					id="hero"
+				>
+					<h2>🎬 Customizing Hero Section</h2>
+
+					<h3>Main Headline & Subheadline</h3>
+					<p>
+						Located in
+						<span class="file-path"
+							>index.html</span
+						>
+						around line 100-150
+					</p>
+
+					<h4>Find and replace:</h4>
+					<div class="code-block">
+						&lt;h1 class="hero-headline"&gt; The
+						Future of Fleet Management &lt;span
+						class="highlight"&gt;Starts
+						Here&lt;/span&gt; &lt;/h1&gt; &lt;p
+						class="hero-subheadline"&gt; Your
+						custom subheadline text goes here
+						&lt;/p&gt;
+					</div>
+
+					<h3>Hero Badge</h3>
+					<div class="code-block">
+						&lt;div class="hero-badge"&gt; &lt;i
+						class="fas
+						fa-check-circle"&gt;&lt;/i&gt;
+						&lt;span&gt;Trusted by 500+ Fleet
+						Operators&lt;/span&gt; &lt;/div&gt;
+					</div>
+
+					<h3>Call-to-Action Buttons</h3>
+					<div class="code-block">
+						&lt;a href="#demo"
+						class="cta-primary"&gt; &lt;i
+						class="fas fa-play"&gt;&lt;/i&gt;
+						&lt;span&gt;Start Your Fleet
+						Transformation&lt;/span&gt; &lt;/a&gt;
+						&lt;a href="#demo"
+						class="cta-secondary"&gt; &lt;i
+						class="fas
+						fa-calendar-check"&gt;&lt;/i&gt;
+						&lt;span&gt;View Demo&lt;/span&gt;
+						&lt;/a&gt;
+					</div>
+
+					<h3>Quick Stats Section</h3>
+					<p>
+						Edit the numbers and labels in the
+						quick-stats section:
+					</p>
+					<div class="code-block">
+						&lt;div class="quick-stat"&gt; &lt;div
+						class="stat-icon"&gt;&lt;i class="fas
+						fa-car"&gt;&lt;/i&gt;&lt;/div&gt;
+						&lt;div&gt; &lt;div
+						class="item-number"&gt;500+&lt;/div&gt;
+						&lt;div class="item-label"&gt;Fleet
+						Operators&lt;/div&gt; &lt;/div&gt;
+						&lt;/div&gt;
+					</div>
+				</div>
+
+				<!-- How It Works -->
+				<div
+					class="section"
+					id="howitworks"
+				>
+					<h2>
+						⚙️ Updating How It Works Section
+					</h2>
+
+					<h3>Section Header</h3>
+					<div class="code-block">
+						&lt;div class="section-badge"&gt;
+						&lt;i class="fas fa-cog"&gt;&lt;/i&gt;
+						&lt;span&gt;Our Process&lt;/span&gt;
+						&lt;/div&gt; &lt;h2&gt;Transforming
+						Your Fleet in 4 Simple
+						Steps&lt;/h2&gt;
+					</div>
+
+					<h3>Individual Step Structure</h3>
+					<div class="code-block">
+						&lt;div class="process-step"&gt;
+						&lt;div class="step-icon"&gt; &lt;div
+						class="step-number"&gt;1&lt;/div&gt;
+						&lt;i class="fas
+						fa-tasks"&gt;&lt;/i&gt; &lt;/div&gt;
+						&lt;h3&gt;Assessment&lt;/h3&gt;
+						&lt;p&gt;Step description&lt;/p&gt;
+						&lt;ul&gt; &lt;li&gt;Feature
+						1&lt;/li&gt; &lt;li&gt;Feature
+						2&lt;/li&gt; &lt;li&gt;Feature
+						3&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt;
+					</div>
+
+					<h3>Modifying Steps</h3>
+					<ol>
+						<li>
+							Change the step number (1, 2, 3, 4)
+						</li>
+						<li>
+							Update the icon using Font Awesome
+							class
+						</li>
+						<li>Change the step title</li>
+						<li>Update the description</li>
+						<li>Edit the feature bullets</li>
+					</ol>
+				</div>
+
+				<!-- ROI Calculator -->
+				<div
+					class="section"
+					id="roicalculator"
+				>
+					<h2>📊 ROI Calculator Customization</h2>
+
+					<h3>Overview</h3>
+					<p>
+						The ROI calculator performs real-time
+						calculations based on user inputs.
+					</p>
+
+					<h3>Modifying Input Fields</h3>
+					<div class="code-block">
+						&lt;div class="calculator-input"&gt;
+						&lt;label&gt;Number of
+						Vehicles&lt;/label&gt; &lt;div
+						class="input-wrapper"&gt; &lt;i
+						class="fas fa-car"&gt;&lt;/i&gt;
+						&lt;input type="number"
+						id="vehicleCount" value="50" /&gt;
+						&lt;/div&gt; &lt;/div&gt;
+					</div>
+
+					<h3>Updating Calculation Logic</h3>
+					<p>
+						Edit the JavaScript in
+						<span class="file-path"
+							>script.js</span
+						>
+						to adjust formulas:
+					</p>
+					<div class="code-block">
+						// Find the ROI calculator section in
+						script.js const vehicleCount =
+						parseFloat(document.getElementById('vehicleCount').value);
+						const monthlyFuel = vehicleCount *
+						1500; // Adjust multiplier as needed
+						const yearlySavings = monthlyFuel * 12
+						* 0.65; // Adjust savings percentage
+					</div>
+
+					<div class="warning">
+						<strong>⚠️ Important:</strong> Test
+						all calculator changes with sample
+						values to ensure accuracy before
+						deploying.
+					</div>
+				</div>
+
+				<!-- Case Studies -->
+				<div
+					class="section"
+					id="casestudies"
+				>
+					<h2>📈 Updating Case Studies</h2>
+
+					<h3>Case Study Card Structure</h3>
+					<div class="code-block">
+						&lt;div class="case-study-card"&gt;
+						&lt;div class="case-study-header"&gt;
+						&lt;h3&gt;Company Name&lt;/h3&gt;
+						&lt;p&gt;Industry or tagline&lt;/p&gt;
+						&lt;/div&gt; &lt;div
+						class="case-study-metrics"&gt; &lt;div
+						class="metric-item"&gt; &lt;div
+						class="metric-icon"&gt;&lt;i
+						class="fas
+						fa-percent"&gt;&lt;/i&gt;&lt;/div&gt;
+						&lt;div
+						class="metric-value"&gt;25%&lt;/div&gt;
+						&lt;div class="metric-label"&gt;Cost
+						Reduction&lt;/div&gt; &lt;/div&gt;
+						&lt;!-- More metrics --&gt;
+						&lt;/div&gt; &lt;p
+						class="case-study-quote"&gt;"Testimonial
+						quote goes here"&lt;/p&gt; &lt;p
+						class="case-study-author"&gt;— Author
+						Name, Title&lt;/p&gt; &lt;/div&gt;
+					</div>
+
+					<h3>Updating Metrics</h3>
+					<table>
+						<tr>
+							<th>Element</th>
+							<th>Edit Location</th>
+							<th>Example</th>
+						</tr>
+						<tr>
+							<td>Company Name</td>
+							<td>
+								&lt;h3&gt;Company Name&lt;/h3&gt;
+							</td>
+							<td>Acme Transportation</td>
+						</tr>
+						<tr>
+							<td>Metric Value</td>
+							<td>
+								&lt;div class="metric-value"&gt;
+							</td>
+							<td>45%</td>
+						</tr>
+						<tr>
+							<td>Metric Label</td>
+							<td>
+								&lt;div class="metric-label"&gt;
+							</td>
+							<td>Carbon Reduction</td>
+						</tr>
+						<tr>
+							<td>Testimonial</td>
+							<td>
+								&lt;p class="case-study-quote"&gt;
+							</td>
+							<td>"Best solution..."</td>
+						</tr>
+					</table>
+				</div>
+
+				<!-- Colors -->
+				<div
+					class="section"
+					id="colors"
+				>
+					<h2>🎨 Color Scheme Customization</h2>
+
+					<h3>Current Color Palette</h3>
+					<table>
+						<tr>
+							<th>Use</th>
+							<th>Color</th>
+							<th>Hex Code</th>
+						</tr>
+						<tr>
+							<td>Primary Green</td>
+							<td
+								style="
+									background: #4ade80;
+									color: white;
+								"
+							>
+								■
+							</td>
+							<td>#4ade80</td>
+						</tr>
+						<tr>
+							<td>Primary Cyan</td>
+							<td
+								style="
+									background: #22d3ee;
+									color: white;
+								"
+							>
+								■
+							</td>
+							<td>#22d3ee</td>
+						</tr>
+						<tr>
+							<td>Dark Background</td>
+							<td
+								style="
+									background: #0f172a;
+									color: white;
+								"
+							>
+								■
+							</td>
+							<td>#0f172a</td>
+						</tr>
+						<tr>
+							<td>Light Text</td>
+							<td
+								style="
+									background: #f1f5f9;
+									color: #333;
+								"
+							>
+								■
+							</td>
+							<td>#f1f5f9</td>
+						</tr>
+					</table>
+
+					<h3>Changing All Green Accents</h3>
+					<ol>
+						<li>
+							Open
+							<span class="file-path"
+								>styles.css</span
+							>
+						</li>
+						<li>
+							Use Find & Replace (Ctrl+H or Cmd+H)
+						</li>
+						<li>
+							Find:
+							<span class="highlight"
+								>#4ade80</span
+							>
+						</li>
+						<li>
+							Replace with your color code (e.g.,
+							<span class="highlight"
+								>#ff6b6b</span
+							>)
+						</li>
+						<li>
+							Do the same for
+							<span class="highlight"
+								>#86efac</span
+							>
+							(bright green)
+						</li>
+					</ol>
+
+					<h3>Changing All Cyan Accents</h3>
+					<ol>
+						<li>
+							Find:
+							<span class="highlight"
+								>#22d3ee</span
+							>
+						</li>
+						<li>
+							Replace with your color code (e.g.,
+							<span class="highlight"
+								>#4ecdc4</span
+							>)
+						</li>
+						<li>
+							Also replace:
+							<span class="highlight"
+								>#67e8f9</span
+							>
+							(bright cyan)
+						</li>
+					</ol>
+
+					<div class="info">
+						<strong>💡 Tip:</strong> Use tools
+						like
+						<a
+							href="https://colorhexa.com"
+							target="_blank"
+							>ColorHexa</a
+						>
+						or
+						<a
+							href="https://coolors.co"
+							target="_blank"
+							>Coolors</a
+						>
+						to generate complementary color
+						schemes.
+					</div>
+				</div>
+
+				<!-- Fonts -->
+				<div
+					class="section"
+					id="fonts"
+				>
+					<h2>🔤 Typography Customization</h2>
+
+					<h3>Current Font Stack</h3>
+					<p>
+						The site uses the "Inter" font from
+						Google Fonts. It's already loaded in
+						the HTML head.
+					</p>
+
+					<h3>Changing to a Different Font</h3>
+					<ol>
+						<li>
+							Go to
+							<a
+								href="https://fonts.google.com"
+								target="_blank"
+								>Google Fonts</a
+							>
+						</li>
+						<li>Select a font family you like</li>
+						<li>Copy the &lt;link&gt; tag</li>
+						<li>
+							Replace the existing font link in
+							<span class="file-path"
+								>index.html</span
+							>
+							&lt;head&gt;
+						</li>
+						<li>
+							Update the font-family in
+							<span class="file-path"
+								>styles.css</span
+							>:
+							<div class="code-block">
+								body { font-family: "Your New
+								Font", sans-serif; /* Replace
+								"Inter" with your font name */ }
+							</div>
+						</li>
+					</ol>
+
+					<h3>Adjusting Font Sizes</h3>
+					<p>
+						Search in
+						<span class="file-path"
+							>styles.css</span
+						>
+						for these classes:
+					</p>
+					<div class="code-block">
+						h1 { font-size: 3.8rem; } /* Main
+						headline */ h2 { font-size: 2.5rem; }
+						/* Section headings */ h3 { font-size:
+						1.5rem; } /* Subheadings */ body {
+						font-size: 1rem; } /* Body text */
+					</div>
+
+					<h3>Responsive Font Sizes</h3>
+					<p>
+						Fonts automatically scale down on
+						mobile due to media queries:
+					</p>
+					<div class="code-block">
+						@media (max-width: 768px) { h1 {
+						font-size: 2rem; } h2 { font-size:
+						1.8rem; } }
+					</div>
+				</div>
+
+				<!-- FAQ -->
+				<div
+					class="section"
+					id="faq"
+				>
+					<h2>❓ FAQ & Troubleshooting</h2>
+
+					<h3>Q: How do I add a new section?</h3>
+					<p>
+						<strong>A:</strong> Copy an existing
+						section from the HTML, modify the
+						content, and paste it in the desired
+						location. Make sure to create
+						corresponding CSS styling.
+					</p>
+
+					<h3>Q: My changes aren't showing up</h3>
+					<p>
+						<strong>A:</strong> Try these steps:
+					</p>
+					<ul>
+						<li>
+							Hard refresh your browser
+							(Ctrl+Shift+R or Cmd+Shift+R)
+						</li>
+						<li>Clear browser cache</li>
+						<li>
+							Close and reopen the browser tab
+						</li>
+						<li>
+							Check for syntax errors in your code
+						</li>
+					</ul>
+
+					<h3>
+						Q: How do I change the mobile menu
+						text?
+					</h3>
+					<p>
+						<strong>A:</strong> The mobile menu
+						links are in the same HTML navigation
+						as desktop. Edit the &lt;a&gt; tags in
+						the nav-menu section.
+					</p>
+
+					<h3>Q: Can I add animations?</h3>
+					<p>
+						<strong>A:</strong> Yes! The site uses
+						CSS animations. Look for @keyframes in
+						styles.css or add your own animations.
+					</p>
+
+					<h3>Q: How do I deploy to the web?</h3>
+					<p>
+						<strong>A:</strong> Upload all files
+						to your web hosting using:
+					</p>
+					<ul>
+						<li>
+							FTP client (FileZilla, Transmit)
+						</li>
+						<li>
+							GitHub Pages (if versioned on
+							GitHub)
+						</li>
+						<li>Web hosting control panel</li>
+					</ul>
+
+					<h3>Q: Where are the images stored?</h3>
+					<p>
+						<strong>A:</strong> Images are in the
+						<span class="file-path"
+							>assets/images/</span
+						>
+						folder. Replace them with your own
+						images.
+					</p>
+
+					<h3>
+						Q: Can I use this template
+						commercially?
+					</h3>
+					<p>
+						<strong>A:</strong> Yes! This template
+						is available for commercial use. Check
+						the LICENSE file for details.
+					</p>
+
+					<h3>
+						Q: How do I add a form submission?
+					</h3>
+					<p>
+						<strong>A:</strong> The form currently
+						exists but needs a backend service.
+						Options:
+					</p>
+					<ul>
+						<li>
+							Use Formspree (<a
+								href="https://formspree.io"
+								target="_blank"
+								>formspree.io</a
+							>)
+						</li>
+						<li>
+							Use Netlify Forms (if deployed on
+							Netlify)
+						</li>
+						<li>Build a custom backend</li>
+					</ul>
+				</div>
+
+				<div
+					class="success"
+					style="margin-top: 40px"
+				>
+					<strong>✨ You're all set!</strong> You
+					now have the knowledge to customize this
+					landing page. Happy editing!
+				</div>
+			</div>
+
+			<footer>
+				<p>
+					&copy; 2024 CleanFleet Solutions. All
+					rights reserved. |
+					<a
+						href="README.md"
+						style="
+							color: #4ade80;
+							text-decoration: none;
+						"
+						>View Main README</a
+					>
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

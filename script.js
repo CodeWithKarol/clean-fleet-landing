@@ -35,7 +35,7 @@ document.addEventListener(
 
 // Smooth Scrolling for Navigation Links
 document
-	.querySelectorAll('a[href^="#"]')
+	.querySelectorAll('a[href^="#"]:not(.nav-logo)')
 	.forEach((anchor) => {
 		anchor.addEventListener(
 			"click",
@@ -317,19 +317,30 @@ document.addEventListener(
 	}
 );
 
-// Scroll Animations
+// Scroll Animations - Simpler and more reliable
 class ScrollAnimations {
 	constructor() {
 		this.observerOptions = {
-			threshold: 0.1,
-			rootMargin: "0px 0px -50px 0px",
+			threshold: 0.05,
+			rootMargin: "0px 0px 0px 0px",
 		};
 
 		this.observer = new IntersectionObserver(
 			(entries) => {
 				entries.forEach((entry) => {
 					if (entry.isIntersecting) {
+						// Add visible class to the section itself
 						entry.target.classList.add("visible");
+
+						// Get all child elements that need animation
+						const allElements =
+							entry.target.querySelectorAll("*");
+						allElements.forEach((el) => {
+							el.classList.add("visible");
+						});
+
+						// Stop observing this section after it's triggered
+						this.observer.unobserve(entry.target);
 					}
 				});
 			},
@@ -340,20 +351,27 @@ class ScrollAnimations {
 	}
 
 	initAnimations() {
-		// Add animation classes to elements
-		const animatedElements =
-			document.querySelectorAll(`
-            .solution-card,
-            .step,
-            .case-study,
-            .result-card,
-            .hero-stats .stat
-        `);
+		// Observe all main sections
+		const sections = document.querySelectorAll(
+			".hero, .solutions, .how-it-works, .roi-calculator, " +
+				".case-studies, .assessment-form, .demo-section, .footer"
+		);
 
-		animatedElements.forEach((el) => {
-			el.classList.add("fade-in");
-			this.observer.observe(el);
+		sections.forEach((section) => {
+			this.observer.observe(section);
 		});
+
+		// Immediately trigger hero section on page load
+		const heroSection =
+			document.querySelector(".hero");
+		if (heroSection) {
+			heroSection.classList.add("visible");
+			const heroElements =
+				heroSection.querySelectorAll("*");
+			heroElements.forEach((el) => {
+				el.classList.add("visible");
+			});
+		}
 	}
 }
 
@@ -361,7 +379,10 @@ class ScrollAnimations {
 document.addEventListener(
 	"DOMContentLoaded",
 	function () {
-		new ScrollAnimations();
+		// Small delay to ensure CSS is loaded
+		setTimeout(() => {
+			new ScrollAnimations();
+		}, 50);
 	}
 );
 
