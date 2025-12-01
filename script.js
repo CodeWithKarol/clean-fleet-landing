@@ -590,3 +590,71 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Video Modal Functionality
+class VideoModal {
+	constructor() {
+		this.modal = document.getElementById(
+			"video-modal"
+		);
+		this.closeBtn = document.querySelector(
+			".video-modal-close"
+		);
+
+		this.bindEvents();
+	}
+
+	bindEvents() {
+		if (!this.modal) return;
+
+		// Target the big play button in the demo section
+		const demoIcon =
+			document.querySelector(".demo-icon");
+		if (demoIcon) {
+			demoIcon.style.cursor = "pointer";
+			demoIcon.addEventListener("click", () =>
+				this.openModal()
+			);
+		}
+
+		// Close modal events
+		if (this.closeBtn) {
+			this.closeBtn.addEventListener(
+				"click",
+				() => this.closeModal()
+			);
+		}
+
+		window.addEventListener("click", (e) => {
+			if (e.target === this.modal) {
+				this.closeModal();
+			}
+		});
+
+		document.addEventListener("keydown", (e) => {
+			if (
+				e.key === "Escape" &&
+				this.modal.classList.contains("active")
+			) {
+				this.closeModal();
+			}
+		});
+	}
+
+	openModal() {
+		this.modal.classList.add("active");
+		document.body.style.overflow = "hidden";
+	}
+
+	closeModal() {
+		this.modal.classList.remove("active");
+		document.body.style.overflow = "";
+	}
+}
+
+document.addEventListener(
+	"DOMContentLoaded",
+	function () {
+		new VideoModal();
+	}
+);
