@@ -600,6 +600,11 @@ class VideoModal {
 		this.closeBtn = document.querySelector(
 			".video-modal-close"
 		);
+		this.videoContainer = document.querySelector(
+			".video-container"
+		);
+		this.videoUrl =
+			"https://www.youtube.com/embed/3SAxXUIre28?autoplay=1&mute=1&playsinline=1";
 
 		this.bindEvents();
 	}
@@ -644,11 +649,21 @@ class VideoModal {
 	openModal() {
 		this.modal.classList.add("active");
 		document.body.style.overflow = "hidden";
+		if (this.videoContainer) {
+			this.videoContainer.innerHTML = `<iframe width="100%" height="100%" src="${this.videoUrl}" title="Electric Car Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+		}
 	}
 
 	closeModal() {
 		this.modal.classList.remove("active");
 		document.body.style.overflow = "";
+		this.stopVideo();
+	}
+
+	stopVideo() {
+		if (this.videoContainer) {
+			this.videoContainer.innerHTML = "";
+		}
 	}
 }
 
